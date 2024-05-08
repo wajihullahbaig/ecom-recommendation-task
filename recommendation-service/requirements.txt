@@ -1,0 +1,8 @@
+fastapi
+pydantic-settings
+
+pymilvus
+langchain
+sentence-transformers
+
+uvicorn
