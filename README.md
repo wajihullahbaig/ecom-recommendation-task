@@ -74,3 +74,4 @@ This project is entirely developed in python using FastAPI as web framework and 
 
 ## Flaws
 One obvious point missed during development was to remove self referencing recommendations. 
+Using a heart-beat system to see which dockers instances are up pre/post launch to ensure everything remains correct operational order.
