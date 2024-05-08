@@ -1,16 +1,16 @@
 # ECom-Recommendation-System
-This repository is developed as a task to develop recommendation system for an E-Commerce store. Along with this task sample [dataset.csv](dataset.csv) file was also provided to be used as a baseline to design and develop this system
+This repository is developed as a task to develop recommendation system for an E-Commerce store. Along with this task sample [dataset.csv](dataset.csv) file is baseline data used to design and develop this system
 
 ## System Design
-In order to achieve this task within given time frame, I came up with following design. 
+In order to achieve this task within given a week, following design was developed. 
 
 ![System Design Diagram](__images/System-Design.png)
 
-I created 3 micro-services and two different types of databases for this task.
+3 micro-services and two different types of databases for this task.
 
 ----------------
 
-As opposed to common micro-service architecture, I have used a single PostgreSQL Server for simplicity. However, separate schemas for services were used and no inter-schema querying is being performed within the application. Following is the snapshot of different schemas used by the services
+As opposed to common micro-service architecture, a single PostgreSQL Server for simplicity. However, separate schemas for services were used and no inter-schema querying is being performed within the application. Following is the snapshot of different schemas used by the services
 
 ![Service Schemas Snapshot](__images/Service-Schemas-Snapshot.png)
 
@@ -69,11 +69,8 @@ Some sample recommendations for customer ids 3 and 8 are shown below
 
 -------------------
 
-## Assumptions
-
-
-## Enhancements
-
-
 ## Technology-Stack
 This project is entirely developed in python using FastAPI as web framework and SQLAlchemy as ORM. Development was done in containerized environment via VSCode
+
+## Flaws
+One obvious point missed during development was to remove self referencing recommendations. 
