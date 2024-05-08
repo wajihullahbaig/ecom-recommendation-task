@@ -1,0 +1,7 @@
+{
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/logs": true
+    },
+    "python.defaultInterpreterPath": "/usr/local/bin/python"
+}

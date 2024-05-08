@@ -1,1 +1,38 @@
-
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        // {
+        //     "name": "User-DB",
+        //     "type": "debugpy",
+        //     "request": "launch",
+        //     "cwd": "${workspaceFolder}/app",
+        //     "program": "dal/user_models.py",
+        //     "console": "integratedTerminal",
+        //     "env": {
+        //         "PYTHONPATH": "${PYTHONPATH}:${workspaceFolder}:${workspaceFolder}/app"
+        //     }
+        // },
+        {
+            "name": "FastAPI Server",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "uvicorn",
+            "cwd": "${workspaceFolder}/app",
+            "args": [
+                "main:app",
+                "--host",
+                "0.0.0.0",
+                "--port",
+                "8000",
+                "--reload"
+            ],
+            "env": {
+                "PYTHONPATH": "${PYTHONPATH}:${workspaceFolder}:${workspaceFolder}/app:${workspaceFolder}/api"
+            },
+            "jinja": true
+        }
+    ]
+}
